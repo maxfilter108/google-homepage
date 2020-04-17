@@ -1,0 +1,83 @@
+ul {
+  list-style-type: none;
+  margin: 10px 10px;
+  padding: 0px;
+}
+li{
+  display: inline;
+  padding: 10px;
+  margin: 0;
+}
+.navleft {
+  float: left;
+}
+.navright {
+  float: right
+}
+.central {
+  display: grid;
+  grid-template-columns: auto auto 100px 250px 150px 250px 100px auto auto;
+  grid-template-rows: auto auto auto auto auto auto;}
+.google {
+  display: grid;
+  grid-column: 5/7;
+  grid-row:3/4;
+    position: relative;
+  top: 100px;
+  }
+.search-bar {
+  display: grid;
+  grid-column: 5/7;
+  grid-row: 4/6
+  width: 300px;
+  position: relative;
+  right: 50px;
+  top: 110px
+}
+.google-search {
+    display: grid;
+    grid-column: 5/6;
+    grid-row: 4/5; 
+    width: 200px;
+  position: relative;
+  right: 50px;
+  top: 120px;
+      }
+ .lucky {
+    display: grid;
+    grid-column: 6/7;
+    grid-row: 4/5;
+    width: 200px;
+   position: relative;
+   top: 120px;
+      }
+.hospital {
+  display: grid;
+  grid-column: 5/7;
+  position: relative;
+  top: 150px
+}
+<main>
+  <div id="nav-bar-left" class="navleft">
+    <ul>
+      <li> <a href="about.asp">about</a></li>
+      <li class="store"><a href="store.asp">store</a></li>
+    </ul>
+    </div>
+  <div id="nav-bar-right">
+    <ul class="navright">
+      <li id="gmail"><a href="gmail.asp" class="gmail">gmail</a></li>
+      <li><a href="images.asp" class="images">images</li>
+    </ul>
+    </div>
+
+<div id="central" class="central">
+  <img class="google" id="google logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></img></div>
+<div id="input" class="central"><input id="search-bar" class="search-bar" type="text">
+<button id="search" class="google-search" type="submit">Google Search</button>
+  <button id="I'm feeling lucky" class="lucky" type="submit">I'm feeling lucky</button></form>
+  </div>
+<div>
+  <ul class="central">
+    <li id="hospital" class="hospital"><a href="hospital-workers.asp"</a>To hospital workers, thank you</li></ul>
+</main>
